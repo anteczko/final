@@ -1,0 +1,111 @@
+-przedstawić się, temat pracy
+@Nazywam się antoni malak, jestem studentem 7-dmego semestru informatyki stosowanej, a to jest moja prezentacja dotycząca pracy inżynierskiej na temat "Interaktynwgo konfiguratora wnętrz pomeiwszczeń z dekoracyjnymi paneliami 3D"
+-geneza i cel pracy
+ -pomysł na temat
+  -użycie silnika Unity3D
+  @Jedną z początkowych założeń tematu pracy była moja chęć stworzenia czegoś z użyciem silnika do gier komputerowych.
+  -stworzenie aplikacji 'dla biznesu'
+  @Promotor zaproponował stworzenie czegoś z 'potencjałem biznesowym', 
+  -pomysł stworzenia konfiguratora paneli i wnętrz (temat wzięty z życia codziennego)
+  @zostaliśmy zainspirowani stroną sprzedającą dekoracyjne panele na ścianę. Nieruchome zdjęcia i wizualizacje wydawały się marnować potencjał medium internetowego, interaktywna wizualizacja mogłaby o wiele lepiej oddać różnorozność wnętrz i przedawanych produktów
+ -cel pracy
+  -zaprojektowanie i realizacja interaktywnego konfiguratora paneli ściennych umożliwiajacego wizulizację pomieszczenia
+  @celem pracy jest zaprojektowanie i realizacja interaktywnego konfiguratora paneli ściennych umożliwiajacego wizulizację pomieszczenia. Pozwalać on będzie na ograniczone edytowanie pomieszczenia, wybór kształtu, stylu koloru i sposobu ułożenia paneli dekoracyjynch na ścianie
+-zakres przeprowadzonych analiz
+ @Przed rozpoczęciem pracy trzeba było zasięgnąć do źródeł i zdefiniować podstawowe pojęcia, alby móc lepiej zrozumieć ich znaczenie i funkcje.
+ -podstawowe definicje
+  -wizualizacja
+   @Wizualizacja jest obrazową reprezentacją przdmiotu, procesu lub stanu. Dawniej termin odnosił się do obrazu, albo procesu jego tworzenia w ludzkiej wyobraźni. Wizualizacja komputerowa zajmuje się czymś podobnym,. Stara się przedstawić coś nie fizycznego za pomocą ilustracji.
+  -interaktywność
+   @Interkacja jest wzajemnym oddziaływaniem na siebie osób, przedmiotów lub zjawisko. Ważne żeby oddziaływanie to było dwukierunkowe. Interakctywnośc jest miara interakcji i jej jakości.
+   @Interaktywność jest sytuacją w której każda kolejna akcja bierze poprzednią, lub kilka z nich, pod uwagę zmieniając jej kontekst. Wykonanie tej samej akcji w innym kontekśćie będzie skutkować wykonaniem innej czynności.
+  -grafika komputerowa
+   @Grafika komputerowa jest dziedziną zajmująca sie tworzeniem, przetwarzaniem oraz wyświetlaniem obrazów w medium komputerowym. Obraz może być generowany przez komputer, albo może on być odzwierciedleniem świata rzeczywistego. Do ztworzenia zdjęcia używane są matryce światłoczułe, zmieniające docierające do niej fotony na sygnał cyfrowy.
+ -silniki do gier komputerowych
+   @Silnik gry komputerowej nie obejmuje jedynie warstwy wizualnej, jest to kompletny pakiet obejmujący każdy aspekt interaktywnego programu z naciskiem na generowanie grafiki w czasie rzeczywistym. 
+   @Rynek oferuje wiele gotowych rozwiązań, w kwestii silników do gier komputerowych. Mimo że one wszystkie mają ten sam cel, skupiają się one na różnych aspektach oraz posiadają pewne unikalne cechy
+  -jakie mogły być wybrane
+   -unreal engine
+    @Pozwala na tworzenie dużych projektów z bardzo realistyczną grafiką, niestety takowa wymaga dużo mocy obliczeniowej, której urządzenie klienta, uruchamiające stronę internetową, nie będzie w stanie uruchomić.
+   -CryEngine
+    @Stworzony na potrzeby gey Far Cry przez firmę crytek
+    @Nastawiony na tworzenie gier shooterów, FPS/TPS.
+    @Znany z gry Crysis, pozwalał on na niespotykana interakcję ze zniszczalnym otoczeniem i elementy fizyczne
+    @Bardzo dobra grafika, lecz wymagał mocnego sprzętu
+   -Godot
+    @Jest slnikiem na licencji otwartego oprogamowania, jest również darmowy. 
+    @Wspiera tworzenie gier dwudymiarowych i trójwymiarowych.
+    @Czasami jest używany do tworzenia programów, przykładem jest 'Material Maker'
+    @Jest dosyć młodym projektem, więc nie ma tak wielu funkcji co konkurencja.
+  -dlaczego unity3d został wybrany
+   @Silnik nie jest przeznaczony do tworzenia gier AAA, lecz jest nastawiony na szybkie i łatwe tworzenie prostszych gier komputerowych.
+   @Posiada wymagane narzędzia do tworzenia posczególnych części gier komputerowych.
+   @Wspiera wiele platform, a przebudowanie istniejącego projektu jest szybkie i łatwe.
+   @Możliwość wyeksportowania projektu do WebGL, dzięki czemu można osadzić program wynikowy na stronie internetowej.
+  -konfigurator produktu
+   @Konfigurator, dawniej nazywany konfiguratorem produktu, jest narzędziem do tworzenia unikalnej konfiguracji produktu posiadającego wiele opcji konifguracyjnych. Ma on za zadanei przeprowadzić użytkownika przez wszystkie etapy konfiguracji produktu.
+-zadanie i sposób jego realizacji
+ ?sprecyzowanie wymagań
+  @Przed stworzeniem programu należy sprecyzować wymagania, były to wymagania sprzętowe, oraz wymagania dotyczące zakresu funkcji.
+  -wymagania sprzętowe
+   @Silnik musi być w stanie genrowac grafikę w czasie rzeczywistym
+   @Aplikacja powinna ważyć na tyle mało aby dało sie ją pobrać podczas wejścia na stronę internetową
+   @Musi być na tyle zasobo-oszczędna, żeby urządzenia mobilne, przeznaczone do niewymagającego przeglądania internetu, były w stanie ją uruchomić
+   @Technologia musi być wspierana przez przeglądarkę internetową
+ ?zakres funkcjonalności
+  @Zadaniem kreatora jest pokazanie użytkownikowi produktu w jego naturalnym otoczeniu i wsszystkich jego opcji konfiguracyjnych.
+  @Konfigurator produktu ma za zadanie przeporwadzić użytkownika przez kolejne etapy, zaczynając od wyborów najbardziej ogólnych do tych coraz bardziej szczegółowych. Zaczynać będziemy od konifguracji wnętrza: wyboru kolorystki wnętrza i pory dnia która ją oświetla. 
+  @Wybrać będzie można kolorystykę i materiał z których zrobione sa panele, wybeirać będzie można również kształt panelów, sposób ich ułożenia, kąt obortu.
+ -praca wymagana do stworzenia projektu
+  @Pracę wykonaną na potrzeby programu można podzielić na trzy oddzielne kategorie. Wykonać należy materiały do których wliczają się elementy artystyczne niezbędne do wykonania projektu, czyli modele trójwymiarowe i grafiki. 
+  @Wymagana jest logika programu, która będzie definiować w jaki sposób będzie się on zachowywał. Logikę i zachowanie programu będzie definiować kod programu, oraz skrypty napisane na jego potrzeby.
+  @Ostatnią częścią było złozenie go w całość w edytorze Unity.
+  -modele i zasoby graficzne
+   -modele 3D
+    @Głównymi elementami tworzącym scenę będą modele trójwymiarowe. Wszystko co będzie zbudowane w wirtualnej scenie będzie zbudowane z tych modeli trójwymiarowych. Każdy z nich będzie musiał zostać osobno ręcznie wymodelowany na podstawie zdjęć i rysunków poglądowych. Zostały one wymodelowane na podstawie rysunków technicznych, przedstawiające obiekt w różnych rzutach.
+    <pokaż screen z blendera>
+   -grafiki i obrazy
+    @Na grafiki wymagane na potrzeby projektu składają się tekstury, obrazy użyte w scenie, oraz obrazy i ikony stworzone na potrzeby interfejsu użytkownika.
+    @Materiały i tekstury wykorzystane w projekie zostały opatrzone licencją Creative Commons CC0, która pozwala na użycie ich nawet w projektach komercyjnych. Wybrane zostały materiały, z których tworzone są meble i elementy pomieszczenia, głownie różne rodzaje drewna, metal, tekstylia i tworzywa sztuczne.
+    @Ikony i miniatury, zostały użyte w miejscach gdzie nie ma miejsca na tekstowy opis pewnej funkcji, a przekazać trzeba prostą informację
+  -logika programu
+   @Dzięki użyciu gotowego silnika do gier komputerowych, nie będzie wymagane implementowanie wszystkiego od zera, w siniku Unity3d używane są takzwane komponenty. Fragmenty kodu implementujące logikę gry, będą przypisywane do obiektów w scenie gry, w tens posób dodając do nich wymagane funkcjonalności.
+   -interfejs użytkownika
+    @interfejs użytkownika został stworzony z użyciem UNity UI Toolkit, pakeitu przeznaczonego do tworzenie interfejsu użytkownika
+    @Za pomocą graficznego edytora, stworzony został prosty interfejs użytkownika
+    @Używa on akrusza stylów, plików USS
+    @Do jego elemtnów została podłączona logika
+   -skrypty
+    @Są one fragmentami kodu dołączanymi jako komponenty do obiektów w scenie gry. Z ich poziomu można dowolnie odnosić sie do wszystkich innych elementów sceny. Pozwalają na wykonywanie różnorodnych akcji, oraz implementują one logikę programu.
+    @Dla zachowania porządku podzielone są one wedle zakresu funkcjonalności. Funkcjonalności przeznaczone dla danego obiektu umieszczone są w skryptcie do niego dołączanym.
+    @Najważniejszymi obiektami interaktywnymi w scenie i im odpowiadającym skryptom są: ściany interaktywne, kamera, oświetlenie, modele ze zmiennymi teksturami
+    <rysunek sceny i obiektów w niej>
+  -finalizacja projektu
+   @Na finalizację projektu będą skłądać się rzeczy wykonane bezpośrednio w edytorze Unity.
+   -stworzenie sceny
+    -TWorzenie pomieszczenia według planu
+     @W scenie gry stworzona została płaska powierzchnia na która nałożony został plan pomieszczenia. NA jego podastawie stawiane są ściany i meble w pomieszczeniu.
+    -Tworzenie i grupowanie obiektów
+     @Podczas tworzenia obiekt zostały pogrupowane ze sobą. Całe pomieszczenie zostało umeiszczone w jednym obiekcie nadrzędnym, dzięki czemu skalowanie, obracanie i przesuwanie tego nadrzędnego obiektu będzie również edytować całe pomieszczenie.
+     @W podobny sposób zgurpowane są, identyczne do siebie obiekty, takie jak panele ścienne na danej ścianie czy źródła światła w scenie, dzięki czemu łatwiej będzie uzystkać do nich dostęp jednocześnie
+     @Źródła światła są rozmieszczone, najpierw oświetlenie ogólne, nie rzucające światła, potem meble posaidającee sztuczne źródła światła, czyli lmapy, oraz słońce, którego promienia wpadają przez okna pokoju i rzucają naturalne cienie.
+    -Dodawanie skryptów do obiektów
+     @Niektóre skrypty posaidają tylko jedną instancję w całym projekcie, w takich przypadkach zostały one dodane do jednego z głównych obiektów sceny gry.
+     @W przypadku skrpytów, które występują wielokrotnie w scenie gry, zostały dodane one ręcznie do wybranych obietków w scenie, albo prefabrykat posiadający ten skrypt, a następnie został on wielokrotnie zinstancjowany w scenie gry. Późniejsze zmiany i edycje prefabrykatu, mogą być łatwo zastosowane do wszystkich jego instancji.
+   -podłączenie UI do skryptów
+    @UI został najpierw rozrysowany w internetowje aplikacji do projektowania Interfejsu użytkownika, pozwoliło to na wydzielenie części współnych i jego podzielenie na większe i mniejsze części.
+    @Wstępny plan został nastęþnie zaimplementowany w dedykowany do tego edytorze pakietu UI Toolkit. Najpierw podzielony został ekran na dwie części, potem stworzone zostały kolejne menu odpowiadającee osobnym etapom konfiguracji produktu.
+    @Końcowym krokiem było 'podłączenie' przycisków do przypisanych in akcji. Przyciski na pasku progressu, odpowiadają za przełączanie pomiędzy kolejnymi etapami.
+     @Elementy interfejsu występujące w menu tychże etapów, odpoweidzialne są za zmianę parametrów ściany interaktywnej, odbywa się to za pomoca przycisków, i suwaków.
+-efekty proponownaych rozwiązań
+<WIDEŁO>
+  -przeklikiwanie pomiędzy ścianami
+  -zmiana pory dnia/nocy
+  -paleta pomieszczenia
+  -kształt panelu
+  -obrót panelu
+  -sposób ułożenia
+  -materiał
+  -marginesy
+  -kolumny/wiersze
+-podziękować za wysłuchanie prexentacji i zaprosić do zadania pytań
